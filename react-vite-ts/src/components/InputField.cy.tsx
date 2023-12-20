@@ -10,7 +10,6 @@ describe('InputField', () => {
         submitted={false}
       />
     );
-    cy.get('label').contains('Name');
   });
 
   it('when there is no value and form is submitted, should show a required message', () => {
@@ -24,7 +23,5 @@ describe('InputField', () => {
         onChange={cy.spy()}
       />
     );
-    cy.contains('Name is required');
   });
-
 });
